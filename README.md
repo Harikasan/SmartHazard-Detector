@@ -1,15 +1,21 @@
 # Smart Hazard Detector
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![Next.js](https://img.shields.io/badge/Next.js-black?logo=next.js)
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?logo=firebase&logoColor=black)
 ![Google Maps](https://img.shields.io/badge/Google%20Maps%20API-4285F4?logo=googlemaps&logoColor=white)
 
-A real-time road hazard detection app that warns drivers about nearby potholes, speed breakers, manholes, and unsafe road conditions — powered by live location, community reporting, and Firebase.
+Smart Hazard Detector is a web application that helps drivers identify, report, and visualize road hazards in real time. The platform combines community-reported incidents with interactive mapping to improve road awareness and encourage safer driving.
+
+The application allows users to report hazards, explore nearby incidents on an interactive map, verify community reports, and contribute to a continuously updated hazard database.
+
+## Why this Project?
+
+Road hazards such as potholes, accidents, flooding, and construction zones often go unreported until drivers encounter them. Smart Hazard Detector provides a community-driven platform where users can report, verify, and visualize hazards, helping improve situational awareness and road safety.
 
 **🔗 Live Demo:** [smart-hazard-detector-seven.vercel.app](https://smart-hazard-detector-seven.vercel.app)
-Note: The frontend is deployed, but the backend is currently offline, so API-dependent features are temporarily unavailable.
 
+
+> **Note:** The frontend is publicly accessible. Some backend or API-dependent features may require local configuration if backend services are unavailable.
 
 ## Screenshots
 
@@ -31,21 +37,40 @@ The main device collects data from the accelerometer, GPS, and elevation change 
 
 ## Features
 
-- Real-time hazard reporting and map updates via Firebase Firestore
-- Interactive Google Maps visualization with severity-based markers
-- Location-based proximity alerts and route hazard analysis
-- Community voting to verify or dispute hazard reports, plus a removal-request workflow
-- Elevation-based route analysis (Google Elevation API)
-- Voice-assisted navigation alerts
+- 📍 Interactive Google Maps visualization
+- 🚧 Report road hazards with location and severity
+- 👍 Community verification and validation system
+- 🔍 Search and explore nearby hazards
+- 🔥 Real-time Firebase database synchronization
+- 🔐 Secure user authentication
+- 📱 Responsive design for desktop 
+- 🎨 Modern user interface built with Tailwind CSS
 
 ## Tech Stack
 
-Next.js · React · TypeScript · Firebase (Firestore & Auth) · Google Maps / Directions / Elevation APIs · Tailwind CSS · Vercel
+### Frontend
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
 
+### Backend & Database
+- Firebase Authentication
+- Firebase Firestore
+- Python
+- Flask
+
+### APIs
+- Google Maps JavaScript API
+- Google Directions API
+- Google Geocoding API
+
+
+  
 ## Getting Started
 
 ```bash
-git clone https://github.com/Paritosh-Nilmani/SmartHazardDetector.git
+git clone https://github.com/Harikasan/SmartHazard-Detector
 cd SmartHazardDetector
 npm install
 npm run dev   # http://localhost:3000
@@ -53,7 +78,7 @@ npm run dev   # http://localhost:3000
 
 ### Environment variables
 
-Create `.env.local`:
+Create a `.env.local` file and configure:
 
 ```env
 NEXT_PUBLIC_GOOGLE_MAP_API_KEY=your_google_maps_api_key
@@ -83,13 +108,12 @@ npm run lint     # lint checks
 **Types:** Pothole · Speed breaker · Manhole
 **Severity:** Low · Medium · High
 
+## Future Improvements
 
-## Roadmap
-
-- [ ] User authentication & admin dashboard
-- [ ] Image upload for hazard reports
-- [ ] Automated duplicate hazard detection
-- [ ] Offline support & push notifications
-- [ ] Test coverage + CI/CD via GitHub Actions
-- [ ] Integration with smart city / IoT infrastructure and wearables
+- AI-powered hazard severity prediction
+- Push notifications for nearby hazards
+- Route optimization based on hazard density
+- Offline support
+- Mobile application
+- Administrative dashboard with analytics
 
