@@ -8,7 +8,8 @@
 A real-time road hazard detection app that warns drivers about nearby potholes, speed breakers, manholes, and unsafe road conditions — powered by live location, community reporting, and Firebase.
 
 **🔗 Live Demo:** [smart-hazard-detector-seven.vercel.app](https://smart-hazard-detector-seven.vercel.app)
-Built for **VOIS Innovation Marathon 2.0**.
+Note: The frontend is deployed, but the backend is currently offline, so API-dependent features are temporarily unavailable.
+
 
 ## Screenshots
 
@@ -82,9 +83,6 @@ npm run lint     # lint checks
 **Types:** Pothole · Speed breaker · Manhole
 **Severity:** Low · Medium · High
 
-## Related Mobile App
-
-[SpeedBreakerDetector-RoadGuard](https://github.com/attipatalanithinchoudary-cpu/SpeedBreakerDetector-RoadGuard-) — a separate companion mobile app by a collaborator, focused on speed breaker detection.
 
 ## Roadmap
 
@@ -95,10 +93,3 @@ npm run lint     # lint checks
 - [ ] Test coverage + CI/CD via GitHub Actions
 - [ ] Integration with smart city / IoT infrastructure and wearables
 
-## Contributing
-
-PRs welcome — fork, branch, commit, and open a PR. For larger changes, open an issue first to discuss the approach.
-
-## License
-
-[MIT](LICENSE) — add a `LICENSE` file at the repo root if you haven't already.
