@@ -1,4 +1,3 @@
-````markdown
 # 🛡️ Smart Hazard Detector
 
 <p align="center">
