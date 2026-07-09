@@ -112,25 +112,6 @@ architecture/workflow-diagram.png
 
 ---
 
-# System Architecture
-
-```text
-              User
-               │
-               ▼
-    Next.js + React Frontend
-               │
-        ┌──────┴──────┐
-        ▼             ▼
-    Firestore    Google Maps APIs
-        │             │
-        └──────┬──────┘
-               ▼
-      Real-Time Hazard Reporting &
-        Route-Based Visualization
-```
-
----
 
 # Features
 
@@ -160,25 +141,6 @@ architecture/workflow-diagram.png
 
 ---
 
-# Project Structure
-
-```text
-SmartHazard-Detector/
-│
-├── app/
-├── architecture/
-├── components/
-├── hooks/
-├── lib/
-├── public/
-│   └── screenshots/
-├── styles/
-├── package.json
-├── next.config.mjs
-└── README.md
-```
-
----
 
 # Getting Started
 
@@ -295,5 +257,3 @@ Generate a restricted API key and configure it inside `.env.local`.
 This project is licensed under the [MIT License](LICENSE).
 
 ---
-
-````
